@@ -1,0 +1,25 @@
+{
+  "name": "xtsr",
+  "version": "0.1.1",
+  "description": "A CLI program that runs your Typescript file directly in Nodejs. IMMEDIATLY ⚡️",
+  "bin": {
+    "tsr": "./bin/cli.js"
+  },
+  "scripts": {
+    "clear": "node ./bin/clear.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.3.0",
+    "esbuild": "^0.13.15",
+    "esbuild-node-externals": "^1.4.0",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^16.11.9",
+    "typescript": "^4.5.2"
+  }
+}
