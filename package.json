@@ -5,6 +5,13 @@
   "bin": {
     "tsr": "./bin/cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parrotdance/xtsr"
+  },
+  "bugs": {
+    "url": "https://github.com/parrotdance/xtsr/issues"
+  },
   "scripts": {
     "clear": "node ./bin/clear.js"
   },
