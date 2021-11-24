@@ -1,6 +1,6 @@
 {
   "name": "xtsr",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A CLI program that runs your Typescript file directly in Nodejs. IMMEDIATLY ⚡️",
   "bin": {
     "tsr": "./bin/cli.js"
@@ -15,7 +15,11 @@
   "scripts": {
     "clear": "node ./bin/clear.js"
   },
-  "keywords": ["typescript", "nodejs", "cli"],
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "cli"
+  ],
   "author": "Jim Lin",
   "license": "MIT",
   "dependencies": {
