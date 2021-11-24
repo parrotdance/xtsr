@@ -1,6 +1,6 @@
 {
   "name": "xtsr",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A CLI program that runs your Typescript file directly in Nodejs. IMMEDIATLY ⚡️",
   "bin": {
     "tsr": "./bin/cli.js"
