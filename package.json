@@ -15,9 +15,9 @@
   "scripts": {
     "clear": "node ./bin/clear.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["typescript", "nodejs", "cli"],
+  "author": "Jim Lin",
+  "license": "MIT",
   "dependencies": {
     "commander": "^8.3.0",
     "esbuild": "^0.13.15",
