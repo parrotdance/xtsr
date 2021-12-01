@@ -4,20 +4,20 @@ const { nodeExternalsPlugin } = require('esbuild-node-externals')
 const { join } = require('path')
 const { spawnSync } = require('child_process')
 const { existsSync } = require('fs')
-const { outfile } = require('./utils')
+const { runnerFilePath } = require('./utils')
 
 const execute = () => spawnSync(
   process.execPath,
-  [`${outfile}`].concat(process.argv.slice(2)),
+  [`${runnerFilePath}`].concat(process.argv.slice(2)),
   { stdio: 'inherit', detached: true }
 )
 
-if (existsSync(outfile)) {
+if (existsSync(runnerFilePath)) {
   execute()
 } else {
   esbuild.build({
     entryPoints: [join(__dirname, '..', 'src', 'index.ts')],
-    outfile,
+    outfile: runnerFilePath,
     bundle: true,
     platform: 'node',
     target: `node${process.versions.node.split('.')[0]}`,
